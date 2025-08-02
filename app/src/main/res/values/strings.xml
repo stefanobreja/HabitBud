@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HabitBud</string>
+    <string name="home">Home</string>
+    <string name="calendar">Calendar</string>
+    <string name="graphs">Graphics</string>
+    <string name="today_date">Today, %1s %2s</string>
+</resources>
