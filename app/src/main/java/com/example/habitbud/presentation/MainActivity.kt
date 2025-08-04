@@ -31,6 +31,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.habitbud.presentation.calendar.CalendarScreen
 import com.example.habitbud.presentation.habits.HabitsScreen
 import com.example.habitbud.ui.theme.HabitBudTheme
 
@@ -103,13 +104,14 @@ fun HabitBudApp() {
                     HabitsScreen()
                 }
 
+                composable<NavItem.Calendar> {
+                    CalendarScreen()
+                }
+
                 composable<NavItem.Graphs> {
                     Text(text = "Habits")
                 }
 
-                composable<NavItem.Calendar> {
-                    Text(text = "Habits")
-                }
 
             }
         }

@@ -1,6 +1,10 @@
 package com.example.habitbud.ui.theme
 
+import androidx.compose.material3.ColorScheme
+import androidx.compose.runtime.Immutable
+import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.colorspace.ColorSpace
 
 val primaryLight = Color(0xFF556065)
 val onPrimaryLight = Color(0xFFFFFFFF)
@@ -14,9 +18,9 @@ val tertiaryLight = Color(0xFF924A31)
 val onTertiaryLight = Color(0xFFFFFFFF)
 val tertiaryContainerLight = Color(0xFFFFA384)
 val onTertiaryContainerLight = Color(0xFF79371F)
-val errorLight = Color(0xFFA63931)
+val errorLight = Color(0xFFAF241B)
 val onErrorLight = Color(0xFFFFFFFF)
-val errorContainerLight = Color(0xFFEB6C60)
+val errorContainerLight = Color(0xFFAF241B)
 val onErrorContainerLight = Color(0xFF5F0305)
 val backgroundLight = Color(0xFFFBF9F8)
 val onBackgroundLight = Color(0xFF1B1C1C)
@@ -122,7 +126,7 @@ val tertiaryDark = Color(0xFFFFCAB9)
 val onTertiaryDark = Color(0xFF571E08)
 val tertiaryContainerDark = Color(0xFFFFA384)
 val onTertiaryContainerDark = Color(0xFF79371F)
-val errorDark = Color(0xFFFFB4AB)
+val errorDark = Color(0xFFAF241B)
 val onErrorDark = Color(0xFF660809)
 val errorContainerDark = Color(0xFFEB6C60)
 val onErrorContainerDark = Color(0xFF5F0305)
@@ -158,9 +162,9 @@ val tertiaryDarkMediumContrast = Color(0xFFFFD3C5)
 val onTertiaryDarkMediumContrast = Color(0xFF491401)
 val tertiaryContainerDarkMediumContrast = Color(0xFFFFA384)
 val onTertiaryContainerDarkMediumContrast = Color(0xFF531B06)
-val errorDarkMediumContrast = Color(0xFFFFD2CC)
+val errorDarkMediumContrast = Color(0xFFAF241B)
 val onErrorDarkMediumContrast = Color(0xFF540003)
-val errorContainerDarkMediumContrast = Color(0xFFEB6C60)
+val errorContainerDarkMediumContrast = Color(0xFFAF241B)
 val onErrorContainerDarkMediumContrast = Color(0xFF000000)
 val backgroundDarkMediumContrast = Color(0xFF131314)
 val onBackgroundDarkMediumContrast = Color(0xFFE4E2E2)
@@ -194,7 +198,7 @@ val tertiaryDarkHighContrast = Color(0xFFFFECE7)
 val onTertiaryDarkHighContrast = Color(0xFF000000)
 val tertiaryContainerDarkHighContrast = Color(0xFFFFAF95)
 val onTertiaryContainerDarkHighContrast = Color(0xFF1D0400)
-val errorDarkHighContrast = Color(0xFFFFECE9)
+val errorDarkHighContrast = Color(0xFFAF241B)
 val onErrorDarkHighContrast = Color(0xFF000000)
 val errorContainerDarkHighContrast = Color(0xFFFFAEA5)
 val onErrorContainerDarkHighContrast = Color(0xFF220001)
@@ -217,3 +221,16 @@ val surfaceContainerLowDarkHighContrast = Color(0xFF201F1F)
 val surfaceContainerDarkHighContrast = Color(0xFF313030)
 val surfaceContainerHighDarkHighContrast = Color(0xFF3C3B3B)
 val surfaceContainerHighestDarkHighContrast = Color(0xFF484646)
+
+val green = Color(0xFF36C15D)
+val red = Color(0xFFC03636)
+val yellow = Color(0xFFFFD146)
+
+val ColorScheme.greenSuccess: Color
+    get() = green
+
+val ColorScheme.redFailure: Color
+    get() = red
+
+val ColorScheme.yellowNotCompleted: Color
+    get() = yellow

@@ -39,6 +39,12 @@ android {
     buildFeatures {
         compose = true
     }
+    kotlin {
+        sourceSets.all {
+            languageSettings.enableLanguageFeature("ExplicitBackingFields")
+        }
+    }
+
 }
 
 dependencies {

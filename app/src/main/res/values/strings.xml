@@ -4,4 +4,7 @@
     <string name="calendar">Calendar</string>
     <string name="graphs">Graphics</string>
     <string name="today_date">Today, %1s %2s</string>
+    <string name="morning_label">Morning</string>
+    <string name="noon_label">Noon</string>
+    <string name="evening_label">Evening</string>
 </resources>

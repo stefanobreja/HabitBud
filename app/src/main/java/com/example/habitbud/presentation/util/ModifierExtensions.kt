@@ -25,3 +25,13 @@ fun Modifier.cardBackground(
         color = color,
         shape = RoundedCornerShape(radius)
     )
+
+
+@Composable
+fun Modifier.conditional(condition: Boolean, modifier: @Composable Modifier.() -> Modifier): Modifier {
+    return if (condition) {
+        then(modifier(Modifier))
+    } else {
+        this
+    }
+}
