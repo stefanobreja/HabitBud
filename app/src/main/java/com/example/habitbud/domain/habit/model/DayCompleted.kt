@@ -1,4 +1,4 @@
-package com.example.habitbud.domain.common.model
+package com.example.habitbud.domain.habit.model
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
